@@ -1,33 +1,30 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css'
+import {Navbar, Nav, Container} from 'react-bootstrap'
 
 
-function NavBar  ()  {
+function NavBar ()  {
   return (
     <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                     <a className="navbar-brand" href="#">Choco-Late</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Empresariales</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Eventos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a classname="nav-link disabled">Momentos Unicos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                <img
+                  src="img/Logo.png"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                  alt="React Bootstrap logo"
+               />
+                <Navbar.Brand href="#home">Choco-Late</Navbar.Brand>
+                <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#features">Empresariales</Nav.Link>
+                <Nav.Link href="#pricing">Eventos</Nav.Link>
+                </Nav>
+                </Container>
+            </Navbar>
+
     </div>
   )
 }
