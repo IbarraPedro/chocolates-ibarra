@@ -4,9 +4,9 @@ const CartWidget = () => {
   return (
     <div>
              <img 
-            src='./img/Logo.png'
-            width="30"
-            height="30"
+            src={require(`./img/Logo.png`)}
+            width="90"
+            height="90"
             />
         
     </div>

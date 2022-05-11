@@ -12,7 +12,9 @@ function App() {
         <NavBar>
         
         </NavBar> 
-        <ItemListContainer/>
+        <ItemListContainer
+        saludo='Welcome to my E-commerce'
+        />
 
     </div>
   );
