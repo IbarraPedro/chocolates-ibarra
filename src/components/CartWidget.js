@@ -1,12 +1,13 @@
 import React from 'react'
 
+
 const CartWidget = () => {
   return (
     <div>
              <img 
-            src={require(`./img/Logo.png`)}
-            width="90"
-            height="90"
+            src='img/carrito.png'
+            width="60"
+            height="60"
             />
         
     </div>
